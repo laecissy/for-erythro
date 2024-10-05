@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+                <html lang="en">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>౨ৎ˚₊ letters for erythro 🍂</title>
+                    <style>
+                        body {
+                            margin: 0;
+                            padding: 0;
+                            font-family: 'Georgia', serif;
+                            background-color: #F5F5DC; /* Beige background */
+                            color: #4E342E; /* Darker brown for text */
+                        }
+
+                        /* Main container */
+                        .container {
+                            text-align: center;
+                            margin-top: 50px;
+                            padding: 0 20px; /* Added padding for smaller screens */
+                        }
+
+                        /* " ౨ৎ˚₊ Hi there!" and subtitle styling */
+                        h1 {
+                            font-size: 48px;
+                            color: #6D4C41;
+                            letter-spacing: 2px;
+                            font-family: 'Cursive', serif;
+                        }
+
+                        h2 {
+                            font-size: 24px;
+                            color: #5D4037;
+                            margin-top: -10px;
+                        }
+
+                        /* Envelope styling */
+                        .envelope-container {
+                            margin: 50px auto;
+                            position: relative;
+                            width: 300px; /* Increased width */
+                            height: 220px; /* Increased height */
+                            background-color: #D7CCC8;
+                            border: 2px solid #5D4037;
+                            border-radius: 10px;
+                            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+                            cursor: pointer;
+                            transition: all 0.3s ease-in-out;
+                        }
+
+                        .envelope-container:hover {
+                            transform: scale(1.05);
+                        }
+
+                        .envelope-flap {
+                            position: absolute;
+                            top: -50px; /* Adjusted flap position */
+                            left: 0;
+                            width: 100%;
+                            height: 70px; /* Increased flap height */
+                            background-color: #A1887F;
+                            border-top-left-radius: 10px;
+                            border-top-right-radius: 10px;
+                            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+                            background-image: url(https://open.spotify.com/album/6dVCpQ7oGJD1oYs2fv1t5M); /* Cute floral stamp design */
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+
+                        .letter {
+                            display: none;
+                            position: absolute;
+                            top: 40px; /* Adjusted top position */
+                            left: 10px;
+                            width: 280px; /* Increased width */
+                            height: auto; /* Auto height */
+                            background-color: #fff;
+                            color: #4E342E;
+                            padding: 10px;
+                            border-radius: 5px;
+                            font-family: 'Georgia', serif;
+                            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+                            text-align: left; /* Align text to the left */
+                            overflow-y: auto; /* Allow scrolling if contentoverflows */
+                            max-height: 150px; /* Max height to fit within the envelope */
+                        }
+
+                        .letter.show {
+                            display: block;
+                        }
+
+                        /* Audio player styling */
+                        .audio-container {
+                            margin: 30px auto;
+                            text-align: center;
+                        }
+
+                        .audio-player {
+                            margin: 10px 0;
+                            width: 300px;
+                            text-align: center;
+                        }
+
+                        .album-cover {
+                            width: 150px;
+                            height: 150px;
+                            border-radius: 10px;
+                            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+                            margin-bottom: 10px;
+                        }
+
+                        /* Cute decorations */
+                        .decoration {
+                            margin-top: 20px;
+                            font-size: 24px;
+                            color: #BCAAA4;
+                        }
+
+                        /* Math problem styling */
+                        .math-problem {
+                            font-size: 20px;
+                            margin-top: 30px;
+                            color: #5D4037;
+                        }
+                    </style>
+                </head>
+                <body>
+                    <div class="container">
+                        <img src="bgpic.gif" alt="background picture">
+                        <h1>Hi there!</h1>
+                        <h2>A website from tek :)</h2>
+                        <h3>♫₊˚.🎧 Please plug in your earphones 🎧‧₊˚🖇️✩</h3>
+                        <h4>(I coded this hihi, 생일 축하해요!)</h4>
+
+                        <!-- Audio Player and Album Cover -->
+                        <div class="audio-container">
+                            <img src="pic.jpg" alt="The 1975 - Being Funny In A Foreign Language" class="album-cover">
+                            <div class="audio-player">
+                                <p class="center">⋆౨ৎ˚ About you - The 1975</p>
+                                <audio controls autoplay loop>
+                                    <source src="The 1975 - About You (Official).mp3" type="audio/mp3">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+
+                        <!-- Envelope with Letter -->
+                        <p>press here!</p>
+                        <div class="envelope-container" onclick="showLetter()">
+                            <div class="envelope-flap"></div>
+                            <div class="letter" id="letter">
+                                <!-- Letter content -->
+                                ⋆ ˚｡⋆౨ৎ˚— The Uncanny Adoration <br><br>
+                                Hi!! hihihihi <br><br>
+                                To clarify things, I am here to tell you things that might shock you.🤯🤯  <br><br>
+                                First of all, I just wanted to say it na, VERY VERY GUSTO KO NAGD MA TELL NI! I’m confessing for my own sake, please do understand me.🥹 <br><br>
+                                I don’t know if it’s obvious, but I think (THINK!) I might have a crush on u (WAIT NA CRINGEAN KO AHAY 😭😭😭😭😭) Please understand me (as an aromantic person) it literally took me 2 YEARS to admit this TO MYSELF! <br><br>
+                                I kept on denying (until now) pero I got so fed up hahahah 🙏🏻🙏🏻🙏🏻 I do understand that you have feelings for someone and I respect it (SO MUCH!) and I support you also!! I really just wanted to tell you this because I wanted to get over it na ahhahahaha <br><br>
+                                In 8th grade, I wrote (almost finished 3 chapters) of a story 😭 (cringe cringe ahay) about my dreams about you and also ABOUT YOU. (NDE KO NAGD KAYA NA CRINGE GD KO YA) <br><br>
+                                I think I also predicted before that you had a crush on someone else and I was right 😭😭🙏🏻🙏🏻🙏🏻 (Lian and Shek knows abt this, the story that I wrote pero wla ko gin pa read sa ila) <br><br>
+                                2023, almost na ta maging grade 9, that’s where I literally forced myself to stop my NEUGEUEGUE sa imo (I STILL AM 😭) and it was because you said it yourself na (✌🏻)!! pero still I really understand!! <br><br>
+                                In 9th grade……. <br><br>
+                                hahahaha….. <br><br>
+                                My uncanny adoration to you never got away…. <br><br>
+                                I DONT KNOW WY 😭😭😭 PLEASE SAVE ME 🙏🏻🙏🏻🙏🏻 <br><br>
+                                In February, 2024, that’s where gn admit ko na to myself na I had an ano on you ah (AY AMBOT DA NA CRINGE GD O Y😭) <br><br>
+                                I’m not looking forward to anything, I just really wanted to express what I feel, liking you feels so frustrating (it’s not your fault) and I don’t expect things to happen 😭🙏🏻🙏🏻 <br><br>
+                                I don’t even know why I learned how to code for you 😭 I learned it in just one night and then right now I don’t even know what I’m doing 😭 <br><br>
+                                I even asked help from my brother (Kyrwin) and bothered him SOO MANY times because I was so lost😭😭 He kept on pushing me to confess my feelings to you because he witnessed that I was so frustrated hahahaha… <br><br>
+                                If only you weren’t one of my closest friends I would have no problem confessing to you pero ALMOST 3 YEARS NAKO NAGA BINOANG JUST BECAUSE ND KO GUSTO MA RUINANG FRIENDSHIP OKAY!!! I really hope things won’t get weird huhuhuhuhu <br><br>
+                                I made this website because I wanted to learn… and I wanted to express my ahhahahaa so nd ko man gani gets ngaa gn himo ko ni 😭🙏🏻 <br><br>
+                                Please please please don’t view me differently🙏🏻🙏🏻 <br><br>
+                                Also when I was telling you nga I had a crush on you in 8th grade it was a test to see how you would react if ever I confessed jendiwnsjw and seeing the results it made me to step back once again hahaha pero right now since I’m so frustrated I had to gather up the courage to do this 😭🙏🏻 <br><br>
+                                I even planned on confessing to you in graduation (next year) pero my feelings cannot wait anymore 🥹🙏🏻 I want it to go away na 🥹🙏🏻 <br><br>
+                                I feel like I’m not myself anymore because I get to do things that were so unique and unlike me, just like learning how to code for you😭🙏🏻😭🙏🏻😭 please this was the craziest so far 😭😭 <br><br>
+                                I’m so informal I apologize for that but I can never take this seriously 😭🙏🏻🙏🏻😭🙏🏻😭🙏🏻😭🙏🏻😭🙏🏻😭🙏🏻 <br><br> My letter isn’t that impactful, but hopefully I will get to tell you everything one day:) I just wanted to ease my mind and be free 🥹🥹 <br><br>
+                                HIHIHIHI
+                            </div>
+                        </div>
+
+                        <div class="decoration">✨🤯🍂</div>
+
+                        <!-- Math Problem Section -->
+                        <div class="math-problem">
+                            <h3>Solve for i:</h3>
+                            <p>9x-7i>3(3x-7u)</p>
+                        </div>
+                    </div>
+                    
+                    <script>
+                        function showLetter() {
+                            const letter = document.getElementById('letter');
+                            letter.classList.toggle('show');
+                        }
+                    </script>
+                </body>
+                </html>
